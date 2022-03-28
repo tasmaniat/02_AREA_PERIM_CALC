@@ -1,5 +1,6 @@
-# checks that users enter a number that is more than zero 
-valid = False
+# functions go here
+def num_check(question):
+valid = False 
 while not valid:
 
     error = "please enter a number that is more than zero"
@@ -15,10 +16,9 @@ while not valid:
 
         # outputs error if input is invalid 
         else: 
-            print("please enter a number that is more than zero")  
+            print(error)  
             print()         
 
     except ValueError:
-        print 
+        print(error)
 
-   
